@@ -4,5 +4,5 @@ def call(String Project, String ImageTag, String dockerhubuser){
   }
   // sh "sudo usermod -aG docker $USER"
   // sh "newgrp docker"
-  sh "sudo docker push ${dockerhubuser}/${Project}:${ImageTag}"
+  sh "docker push ${dockerhubuser}/${Project}:${ImageTag}"
 }
